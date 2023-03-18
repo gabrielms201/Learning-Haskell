@@ -142,5 +142,7 @@ main = do
     print(queenAttacks board kingPosition)
 
     -- Verifica se o rei esta em cheque
-    putStr "\n\n---> IS WHITE KING IN CHECK?\n"
-    print(isKingInCheck board kingPosition)
+    putStr "\n\n---> O REI BRANCO ESTA EM CHEQUE?\n"
+    let result = isKingInCheck board kingPosition
+    if result then print "sim"
+    else print "nao"
