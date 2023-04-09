@@ -14,8 +14,3 @@ membro _ [] = False
 membro e (a:x)
     | e == a = True
     | otherwise = membro e x
-
-------
-
-
-membro l1 l2 = l1 `union` l2
